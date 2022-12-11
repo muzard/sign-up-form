@@ -78,6 +78,8 @@ input {
     border-radius: 4px;
     padding: 4px;
     margin: 2px;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .form-row {
@@ -96,10 +98,12 @@ input {
 
 input:valid {
     border: 2px solid rgb(46, 215, 17);
+    box-shadow: 1px 1px 2px rgb(46, 215, 17);
 }
 
 input:focus {
-    border: 3px solid black;
+    border: 2px solid black;
+    box-shadow:4px 4px 3px rgb(33, 126, 147);
 }
 
 button {
