@@ -58,8 +58,34 @@ body {
 
 .form {
     max-width: 50vw;
+    width: 50vw;
+}
 
+input,
+label {
+    display: block;
+}
+
+input {
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.form-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
+
+/* input:valid {
+    border: 1px solid rgb(46, 215, 17);
+} */
