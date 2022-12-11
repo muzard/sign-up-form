@@ -31,36 +31,61 @@
           <legend>Let's do this!</legend>
 
           <div class="form-inputs">
-              <div class="form-row">
-                  <div class="firstname">
-                      <label for="firstname">First name</label>
-                      <input type="text" name="firstname" id="firstname" placeholder="John"/>
-                  </div>
-                  <div class="lastname">
-                      <label for="lastname">Last name</label>
-                      <input type="text" name="lastname" id="lastname" placeholder="Doe"/>
-                  </div>
+            <div class="form-row">
+              <div class="firstname">
+                <label for="firstname">First name</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="John"
+                  required
+                />
               </div>
-              <div class="form-row">
-                  <div class="email">
-                      <label for="email">Email address</label>
-                      <input type="email" name="email" id="email" placeholder="john.doe@example.com">
-                  </div>
-                  <div class="num">
-                      <label for="num">Phone number</label>
-                      <input type="tel" name="num" id="num" placeholder="040 111 2233">
-                  </div>
+              <div class="lastname">
+                <label for="lastname">Last name</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Doe"
+                  required
+                />
               </div>
-              <div class="form-row">
-                  <div class="pwd">
-                      <label for="pwd">Password</label>
-                      <input type="password" name="pwd" id="pwd">
-                  </div>
-                  <div class="c-pwd">
-                      <label for="c-pwd">Confirm password</label>
-                      <input type="password" id="c-pwd" name="c-pwd">
-                  </div>
+            </div>
+            <div class="form-row">
+              <div class="email">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="john.doe@example.com"
+                  required
+                />
               </div>
+              <div class="num">
+                <label for="num">Phone number</label>
+                <input
+                  type="tel"
+                  name="num"
+                  id="num"
+                  placeholder="040 111 2233"
+                  required
+                  pattern="[0-9 ]+"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="pwd">
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pwd" required />
+              </div>
+              <div class="c-pwd">
+                <label for="c-pwd">Confirm password</label>
+                <input type="password" id="c-pwd" name="c-pwd" required />
+              </div>
+            </div>
           </div>
 
           <div>
