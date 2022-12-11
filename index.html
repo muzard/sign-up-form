@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="left">
-        <div class="left-flex">
-            <img src="./logo_real.svg">
-            <span>MY FORM</span>
-        </div>
+      <div class="left-flex">
+        <img src="./logo_real.svg" />
+        <span>MY FORM</span>
+      </div>
     </div>
 
     <div class="right">
-        <h1>This is the beginning of the form</h1>
+      <div class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+        Ut exercitationem, neque, totam quam minus autem quae doloremque,
+        eligendi libero corporis illum ducimus qui pariatur aperiam non
+        asperiores!
+        <br />
+
+        Nemo, error? Eligendi!
+      </div>
+
+      <div class="form">
+        <form action="post">
+          <legend>Let's do this!</legend>
+
+          <label for="firstname">First name</label>
+          <input type="text" name="firstname" id="firstname" placeholder="John"/>
+
+          <label for="lastname">Last name</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Doe"/>
+
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" placeholder="john.doe@example.com">
+
+          <label for="num">Phone number</label>
+          <input type="tel" name="num" id="num">
+
+          <label for="pwd">Password</label>
+          <input type="password" name="pwd" id="pwd">
+
+          <label for="c-pwd">Confirm password</label>
+          <input type="password" id="c-pwd" name="c-pwd">
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
