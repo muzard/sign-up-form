@@ -19,11 +19,24 @@ body {
     width: 50vw;
 }
 
-.left > h1 {
-    width: 40vw;
+.left-flex {
     margin-top: 25vh;
+    padding: 2vh;
 
-    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-flex > img {
+    height: 10vh;
+    margin-top: 1vh;
+}
+
+.left-flex > span {
+    width: fit-content;
     color: white;
     font-size: 82px;
     text-align: center;
