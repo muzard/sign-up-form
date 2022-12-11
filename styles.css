@@ -1,5 +1,7 @@
 body {
-    background-color: black;
+    background-image: url(./bg-pic.jpg);
+    background-size: 70%;
+    background-repeat: no-repeat;
 
     width: 100vw;
     height: 100vh;
@@ -15,10 +17,18 @@ body {
 .left {
     height: 100%;
     width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#bgpic {
-    height: 120%;
+.left > h1 {
+    width: 200px;
+    background-color: gray;
+    color: white;
+    font-size: 82px;
+    position: absolute;
 }
 
 .right {
