@@ -142,3 +142,7 @@ input:not(:focus):not(:placeholder-shown):invalid {
     margin-top: 16px;
     font-size: 16px;
 }
+
+.invalid {
+    border: 2px solid rgb(226, 0, 0);
+}
