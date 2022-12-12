@@ -112,13 +112,14 @@ button {
     width: 10vw;
     height: 5vh;
     
-    background-color: aqua;
+    color: aliceblue;
+    background-color: #596d48;
     font-size: 22px;
     border-radius: 14px;
-    border: 12px solid aqua;
+    border: 12px solid #596d48;
     
     box-sizing: border-box;
-    box-shadow: 8px 8px 10px rgb(0, 151, 151);
+    box-shadow: 8px 8px 10px #596d48;
 
     transition: all 0.2s ease-in-out;
 }
@@ -131,4 +132,8 @@ button:hover {
 legend {
     margin-bottom: 2vh;
     font-size: 32px;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid rgb(226, 0, 0);
 }
