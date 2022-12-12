@@ -1,3 +1,5 @@
+let confirmed = false;
+
 function checkIfPasswordsMatch() {
   let pw = document.getElementById("pwd");
   let c_pw = document.getElementById("c-pwd");
@@ -15,4 +17,12 @@ function checkIfPasswordsMatch() {
     pw.classList.remove("invalid");
     c_pw.classList.remove("invalid");
   }
+
+  confirmed = true;
+}
+
+function firstCheck() {
+    if (confirmed) {
+        checkIfPasswordsMatch()
+    }
 }
