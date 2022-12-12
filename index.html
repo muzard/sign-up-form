@@ -18,11 +18,11 @@
 
     <div class="right">
       <div class="text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
         Ut exercitationem, neque, totam quam minus autem quae doloremque,
         eligendi libero corporis illum ducimus qui pariatur aperiam non
         asperiores!
-        <br><br>
+        <br /><br />
 
         Nemo, error? Eligendi!
       </div>
@@ -80,12 +80,25 @@
             <div class="form-row">
               <div class="pwd">
                 <label for="pwd">Password</label>
-                <input type="password" name="pwd" id="pwd" required placeholder="strong password"/>
+                <input
+                  type="password"
+                  name="pwd"
+                  id="pwd"
+                  required
+                  placeholder="strong password"
+                />
                 <div id="pwd-text"></div>
               </div>
               <div class="c-pwd">
                 <label for="c-pwd">Confirm password</label>
-                <input type="password" id="c-pwd" name="c-pwd" required placeholder="strong password"/>
+                <input
+                  type="password"
+                  id="c-pwd"
+                  name="c-pwd"
+                  required
+                  placeholder="strong password"
+                  onfocusout="checkIfPasswordsMatch()"
+                />
               </div>
             </div>
           </div>
@@ -93,7 +106,9 @@
           <div>
             <button>Submit</button>
           </div>
-          <div class="already">Already have an account? <a href="">Log in!</a></div>
+          <div class="already">
+            Already have an account? <a href="">Log in!</a>
+          </div>
         </form>
       </div>
     </div>

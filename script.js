@@ -7,12 +7,12 @@ function checkIfPasswordsMatch() {
   if (pw.value !== c_pw.value) {
     pwd_text.textContent = "Passwords need to match!";
 
-    pw.classList.add("invalid")
-    c_pw.classList.add("invalid")
+    pw.classList.add("invalid");
+    c_pw.classList.add("invalid");
   } else if (pw.value == c_pw.value) {
-    pwd_text.textContent = null
+    pwd_text.textContent = null;
 
-    pw.classList.remove("invalid")
-    c_pw.classList.remove("invalid")
+    pw.classList.remove("invalid");
+    c_pw.classList.remove("invalid");
   }
 }
